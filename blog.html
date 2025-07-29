@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Profit multipage</title>
+		<meta name="description" content="Краткое емкое описание текста, включающее поисковые запросы пользователей. Тег <description> должен четко и ясно описывать суть содержания, лучше избегать вводных конструкций и общих фраз. Мета-тег <description> должен быть уникальным для каждой страницы сайта.">
+		<meta name="keywords" content="ключевые фразы или слова через запятую (важно для SEO)"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/choices.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/slider.css">
+		<link href="favicon.ico" rel="icon">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo">
+						<img src="images/header/logo.svg" class="header__logo-image" alt=""/>
+					</a>
+					<div class="header__body">
+						<div class="header__contacts">
+							<a data-da=".menu__contacts, 767, first" href="tel:+7 (900) 000-00-00" class="header__phone">
+								<i class="header__phone-icon _icon-header-phone"></i>
+								<span class="header__phone-number">+7 (900) 000-00-00</span>
+							</a>
+							<div data-da=".menu__contacts, 767, last" class="header__social-media">
+								<div class="header__social-media-description">Задать вопрос в мессенджере</div>
+								<ul class="header__social-media-list">
+									<li class="header__social-media-item"><a href="#" class="header__social-media-link _icon-telegram"></a></li>
+									<li class="header__social-media-item"><a href="#" class="header__social-media-link _icon-whatsapp"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__buttons">
+							<a data-da=".menu__buttons, 767, first" href="#" class="header__button-first">
+								<span class="header__button-first-text">Вакансии</span>
+								<i class="header__button-first-icon _icon-arrow-right"></i>
+							</a>
+							<button data-da=".menu__buttons, 767, last" type="button" class="header__button">
+								<span class="header__button-text">Оставить заявку</span>
+								<i class="header__button-icon _icon-arrow-right"></i>
+							</button>
+						</div>
+
+						<div class="menu__button-open-menu">
+							<div class="menu__button-open-menu-text">МЕНЮ</div>
+							<div class="menu__icon">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__menu menu">
+					<div class="menu__container">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li>
+									<a href="#" class="menu__link menu__link_dropdown">аутстаффинг персонала</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 1</a>
+										</li>
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 2</a>
+										</li>
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="menu__link menu__link_dropdown">Временный персонал</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 1</a>
+										</li>
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 2</a>
+										</li>
+										<li>
+											<a href="" class="menu__sub-link">Раздел страницы 3</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#" class="menu__link menu__link_active">блог</a></li>
+								<li><a href="" class="menu__link">о компании</a></li>
+								<li><a href="" class="menu__link">Вакансии</a></li>
+								<li><a href="" class="menu__link">контакты</a></li>
+							</ul>
+							<div class="menu__contacts"></div>
+							<div class="menu__buttons"></div>
+						</nav>
+
+						<div class="menu__mobile-form">
+							<div class="menu__form-info">Персонал «под ключ»: подбор, налоги, замена и контроль — без вашего участия</div>
+							<div class="menu__form-description">Оставьте контакты - перезвоним в течение 30 минут</div>
+							<form action="#" method="post" class="menu__form mobile-form">
+								<input id="name" type="text" name="name" class="mobile-form__input" placeholder="Ваше имя"/>
+								<input id="phone" type="text" name="phone" class="mobile-form__input" placeholder="Ваш телефон"/>
+								<button class="mobile-form__button">
+									<span class="mobile-form__button-text">Оставить заявку</span>
+									<i class="mobile-form__button-icon _icon-arrow-right"></i>
+								</button>
+								<div class="mobile-form__cneckbox checkbox">
+									<input id="check-mobile-agreement" type="checkbox" class="checkbox__input"/>
+									<label for="check-mobile-agreement" class="checkbox__label">Даю согласие на <span>обработку персональных данных</span></label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<section class="main-section-blog">
+					<div class="main-section-blog__container">
+						<h1 class="main-section-blog__title">Блог</h1>
+					</div>
+				</section>
+
+				<nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+                        <span class="breadcrumbs__separator">→</span>
+                        <li class="breadcrumbs__item">Блог</li>
+                    </ul>
+                </nav>
+
+				<section class="section-blog-articles">
+					<div class="section-blog-articles__container">
+						<h2 class="section-blog-articles__title">Полезные статьи</h2>
+						<div class="section-blog-articles__body blog-articles">
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/02.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/03.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog-articles__item">
+								<a href="#" class="blog-articles__container-image">
+									<img src="images/section-blog-articles/01.png" class="blog-articles__image" alt=""/>
+								</a>
+								<div class="blog-articles__body">
+									<a href="#" class="blog-articles__title-link">
+										<h2 class="blog-articles__title">Разница между аутсорсингом и аутстаффингом: основные отличия простыми словами</h2>
+									</a>
+									<p class="blog-articles__description">Наиболее популярные формы кадрового субподряда — это аутсорсинг и аутстаффинг. В этой статье разберёмся в различиях между ними.</p>
+									<div class="blog-articles__bottom">
+										<a href="#" class="blog-articles__link-to-article">
+											<span class="blog-articles__link-to-article-text">Читать статью</span>
+											<i class="blog-articles__link-to-article-icon _icon-arrow-right"></i>
+										</a>
+										<time class="blog-articles__date" datetime="04.07.2025">04.07.2025</time>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<nav class="pagination">
+					<a href="#" class="pagination__button pagination__button_prev _icon-arrow-small-prev"></a>
+					<ul class="pagination__list">
+						<li class="pagination__item pagination__item_now">1</li>
+						<li class="pagination__item"><a href="#" class="pagination__item-link">2</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__item-link">3</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__item-link">...</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__item-link">124</a></li>
+					</ul>
+					<a href="#" class="pagination__button pagination__button_next _icon-arrow-small-next"></a>
+				</nav>
+
+				<section class="section-our-advantages">
+					<div class="section-our-advantages__container">
+						<h2 class="section-our-advantages__title">Аутстаффинг от ПРОФиТ<span> - эффективное решение для оптимизации кадровых процессов</span></h2>
+						<ul class="section-our-advantages__advantages-list">
+							<li class="section-our-advantages__advantages-item">
+								<div class="section-our-advantages__advantages-meaning">12 лет</div>
+								<div class="section-our-advantages__advantages-description">на рынке труда</div>
+							</li>
+							<li class="section-our-advantages__advantages-item">
+								<div class="section-our-advantages__advantages-meaning">500+</div>
+								<div class="section-our-advantages__advantages-description">сотрудников в базе</div>
+							</li>
+							<li class="section-our-advantages__advantages-item">
+								<div class="section-our-advantages__advantages-meaning">100%</div>
+								<div class="section-our-advantages__advantages-description">официально, соответствие ТК РФ</div>
+							</li>
+							<li class="section-our-advantages__advantages-item">
+								<div class="section-our-advantages__advantages-meaning">100%</div>
+								<div class="section-our-advantages__advantages-description">ответственность за результат</div>
+							</li>
+						</ul>
+						<div class="section-our-advantages__cards cards-advantages">
+							<div class="cards-advantages__item">
+								<div class="cards-advantages__container-image">
+									<img src="images/cards-advantages/01.svg" class="cards-advantages__image" alt="">
+								</div>
+								<h4 class="cards-advantages__title">Комплекс услуг</h4>
+								<ul class="cards-advantages__list">
+									<li class="cards-advantages__list-item">Подбор и оформление персонала</li>
+									<li class="cards-advantages__list-item">Контроль дисциплины и качества работ</li>
+									<li class="cards-advantages__list-item">Ежедневная отчетность по запросу</li>
+								</ul>
+							</div>
+							<div class="cards-advantages__item">
+								<div class="cards-advantages__container-image">
+									<img src="images/cards-advantages/01.svg" class="cards-advantages__image" alt="">
+								</div>
+								<h4 class="cards-advantages__title">Ваши выгоды</h4>
+								<ul class="cards-advantages__list">
+									<li class="cards-advantages__list-item">Экономия до 30% - платите только за отработанные часы</li>
+									<li class="cards-advantages__list-item">Нулевые риски - все обязательства на нас</li>
+									<li class="cards-advantages__list-item">Полное соблюдение ТК РФ</li>
+									<li class="cards-advantages__list-item">Оперативная замена персонала</li>
+								</ul>
+							</div>
+							<div class="cards-advantages__item">
+								<div class="cards-advantages__container-image">
+									<img src="images/cards-advantages/01.svg" class="cards-advantages__image" alt="">
+								</div>
+								<h4 class="cards-advantages__title">Мы берем на себя</h4>
+								<ul class="cards-advantages__list">
+									<li class="cards-advantages__list-item">Все кадровые вопросы</li>
+									<li class="cards-advantages__list-item">Налоги и отчисления</li>
+									<li class="cards-advantages__list-item">Охрану труда и безопасность</li>
+									<li class="cards-advantages__list-item">Контроль выполнения работ</li>
+								</ul>
+							</div>
+							<div class="cards-advantages__item cards-advantages__item_active">
+								<div class="cards-advantages__container-image">
+									<img src="images/cards-advantages/02.svg" class="cards-advantages__image" alt="">
+								</div>
+								<h4 class="cards-advantages__title">Нас выбирают за:</h4>
+								<ul class="cards-advantages__list">
+									<li class="cards-advantages__list-item">Гибкость - ночные смены, срочные заказы, сверхурочные</li>
+									<li class="cards-advantages__list-item">Индивидуальный подход - условия под Ваш бизнес</li>
+									<li class="cards-advantages__list-item">Качественный персонал - строгий отбор, никаких сомнительных кадров</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-areas">
+					<div class="section-areas__container">
+						<h2 class="section-areas__title">Решаем кадровые задачи в любых сферах</h2>
+						<div class="section-areas__cards areas-cards">
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/01.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> на склады</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/02.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> в ритейле</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/03.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> на производство</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/04.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> в строительстве</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/05.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> для сельхоз предприятий</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/06.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> в общепите</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item">
+								<div class="areas-cards__container-image">
+									<img src="images/areas-cards/07.png" class="areas-cards__image" alt="">
+								</div>
+								<div class="areas-cards__bottom">
+									<h2 class="areas-cards__text">Персонал <br> в логистике</h2>
+									<i class="areas-cards__icon _icon-arrow-right"></i>
+								</div>
+							</div>
+							<div class="areas-cards__item areas-card-main">
+								<div class="areas-card-main__content">
+									<h2 class="areas-card-main__text">Аутстаффинг персонала</h2>
+									<i class="areas-card-main__icon _icon-arrow-right"></i>
+								</div>
+								<img src="images/areas-cards/decoration.svg" class="areas-card-main__image" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="basis-form" class="section-basis-form">
+					<div class="section-basis-form__container">
+						<div class="section-basis-form__body">
+							<h2 class="section-basis-form__title">Решим Вашу кадровую проблему уже завтра</h2>
+							<form action="#" class="section-basis-form__form basis-form">
+								<div class="basis-form__container">
+									<input type="text" name="name" class="basis-form__input" placeholder="Ваше имя">
+									<input type="tel" name="phone" class="basis-form__input" placeholder="Ваш телефон">
+									<button class="basis-form__button">
+										<span class="basis-form__button-text">Оставить заявку</span>
+										<i class="basis-form__button-icon _icon-arrow-right"></i>
+									</button>
+								</div>
+								<div class="basis-form__cneckbox checkbox">
+									<input id="check-basis-form-agreement" type="checkbox" class="checkbox__input">
+									<label for="check-basis-form-agreement" class="checkbox__label">Даю согласие на <span>обработку персональных данных</span></label>
+								</div>
+							</form>
+							<div class="section-basis-form__contacts">
+								<div class="section-basis-form__contacts-text">Или задайте свой вопрос в мессенджере</div>
+								<ul class="section-basis-form__contacts-list">
+									<li class="section-basis-form__contacts-item"><a href="#" class="section-basis-form__contacts-link _icon-telegram"></a></li>
+									<li class="section-basis-form__contacts-item"><a href="#" class="section-basis-form__contacts-link _icon-whatsapp"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__head">
+						<a href="#" class="footer__logo">
+							<img src="images/footer/logo.svg" class="footer__logo-image" alt=""/>
+						</a>
+						<div class="footer__body">
+							<div class="footer__contacts">
+								<a href="tel:" class="footer__phone">
+									<img src="images/footer/footer-phone.svg" class="footer__phone-icon" alt=""/>
+									<span class="footer__phone-text">+7 (900) 000-00-00</span>
+								</a>
+								<div class="footer__social-media">
+									<div class="footer__social-media-text">Задать вопрос в мессенджере</div>
+									<ul class="footer__social-media-list">
+										<li class="footer__social-media-item"><a href="#" class="footer__social-media-link _icon-telegram"></a></li>
+										<li class="footer__social-media-item"><a href="#" class="footer__social-media-link _icon-whatsapp"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__buttons">
+								<a href="#" class="footer__button-first">
+									<span class="footer__button-first-text">Соискателям</span>
+									<i class="footer__button-first-icon _icon-arrow-right"></i>
+								</a>
+								<a href="#" class="footer__button-second">
+									<span class="footer__button-second-text">Скачать презентацию</span>
+									<i class="footer__button-second-icon _icon-arrow-down"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__bottom-copy">
+							<a href="#" class="footer__bottom-copy-link">Все праваща защищены, 2025 год.</a>
+						</div>
+						<ul class="footer__bottom-politics">
+							<li class="footer__bottom-politics-item"><a href="#" class="footer__bottom-politics-link">Политика конфиденциальности</a></li>
+							<li class="footer__bottom-politics-item"><a href="#" class="footer__bottom-politics-link">Политика в отношении файлов cookie</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<!--Подключаем jQuery.-->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<!--Подключаем слайдер Swiper.-->
+		<script src="js/swiper-bundle.min.js"></script>
+		
+		<!--Подключаем анимации wow.js-->
+		<script src="js/wow.min.js"></script>
+        <script src="js/wow.js"></script>
+
+		<!--Кастомный селект-->
+		<script src="js/choices.min.js"></script>
+
+		<!--Подключаем файл скриптов.-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
